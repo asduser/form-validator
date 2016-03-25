@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Form validator via Angular.js</title>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css" />
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="myController as vm" class="col-md-6">
+
+    <div>
+    <form class="form-login">
+        <fieldset>
+            <legend> "Form-validator" example </legend>
+
+            <form-validator element="form-validation-button"
+                            handler="vm.showMessage"
+                            set='["user-name", "user-info"]'
+                            email='["user-email"]'
+                            phone='["user-phone"]'
+                            compare-password='["user-password","user-password-confirmed"]'
+                            display-errors="true">
+            </form-validator>
+
+            <div class="form-group">
+                <span class="input-icon">
+                  <input type="email" class="form-control" id="user-name" ng-model="vm.mock.name" placeholder="Your name">
+                </span>
+            </div>
+            <div class="form-group">
+                <span class="input-icon">
+                  <input type="email" class="form-control" id="user-email" ng-model="vm.mock.email" placeholder="Your e-mail">
+                </span>
+            </div>
+            <div class="form-group form-actions">
+                <span class="input-icon">
+                  <input type="password" class="form-control" id="user-password" ng-model="vm.mock.password" placeholder="Your password">
+                </span>
+            </div>
+            <div class="form-group form-actions">
+                <span class="input-icon">
+                  <input type="password" class="form-control" id="user-password-confirmed" ng-model="vm.mock.passwordConfirmed" placeholder="Confirm password">
+                </span>
+            </div>
+            <div class="form-group form-actions">
+                <span class="input-icon">
+                  <input type="text" class="form-control" id="user-phone" ng-model="vm.mock.phone" placeholder="Your phone number">
+                </span>
+            </div>
+            <div class="form-group form-actions">
+                <span class="input-icon">
+                  <input type="text" class="form-control" id="user-info" ng-model="vm.mock.info" placeholder="Some information here...">
+                </span>
+            </div>
+
+            <div class="form-actions btn-group-vertical">
+                <button type="submit" class="btn btn-primary pull-right" id="form-validation-button">
+                    Check & validate form <i class="fa fa-arrow-circle-right"></i>
+                </button>
+            </div>
+
+        </fieldset>
+    </form>
+    </div>
+
+</div>
+
+<script src="vendor/angular.js"></script>
+<script src="vendor/jquery.min.js"></script>
+<script src="dist/form-validator.js"></script>
+<script src="example.js"></script>
+
+</body>
+</html>
