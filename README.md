@@ -1,6 +1,6 @@
 ### Demo
 
-<a href="http://asduser.github.io/examples/form-validator/index.html"><b>Open demo page</b></a>
+<a href="http://asduser.github.io/examples/form-validator/index.html" target="_blank"><b>Open demo page</b></a>
 
 ### Description
 
