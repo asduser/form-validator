@@ -1,3 +1,7 @@
+### Demo
+
+<a href="http://asduser.github.io/examples/form-validator/index.html"><b>Open demo page</b></a>
+
 ### Description
 
 Angular.js directive to manage HTML-forms (validate fields) by the following types:
