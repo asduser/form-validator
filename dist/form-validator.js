@@ -1,11 +1,9 @@
 (function(){
 
-    "use strict";
-
-    angular.module("app.utils", []);
+    "use strict";    
 
     angular
-        .module("app.utils")
+        .module("FE.utils")
         .directive("formValidator", formValidator);
 
     function formValidator(){
