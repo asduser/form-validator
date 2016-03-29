@@ -54,4 +54,4 @@ Use a following attributes inside <b><form-validator></b> directive to manage th
     "handler": "test" 
 ```
 
-See example.html and example.js for details.
+See <i>example.html</i> and <i>example.js</i> for details.
